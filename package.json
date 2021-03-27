@@ -68,7 +68,7 @@
   },
   "lint-staged": {
     "*.{js,scss,css}": [
-      "prettier --write --ignore-unknown",
+      "prettier --write",
       "git add"
     ]
   }
