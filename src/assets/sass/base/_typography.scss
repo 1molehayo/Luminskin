@@ -1,12 +1,13 @@
 .heading {
   @include respond(small) {
-    @include font-size(medium);
+    @include font-size(m-large);
   }
 
-  @include font-family(playfair);
-  @include font-size(large);
-  @include font-weight(bold);
+  @include font-weight(regular);
+  @include font-size(x-large);
+  @include font-family(freight-display);
   margin-bottom: 1.5rem;
+  line-height: 1.25;
   color: color(black);
 }
 
@@ -15,10 +16,10 @@
     @include font-size(small);
   }
 
-  @include font-family(nunito);
+  @include font-family(ff-bau-regular);
   @include font-size(regular);
   @include font-weight(regular);
-  line-height: 1.8;
+  line-height: 1.5;
   letter-spacing: 0.2px;
   color: color(grey);
 }
