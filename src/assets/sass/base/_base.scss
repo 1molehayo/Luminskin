@@ -4,5 +4,15 @@ body {
   @include font-weight(regular);
   line-height: normal;
   letter-spacing: normal;
-  color: color(grey);
+  color: color(dark);
+  font-feature-settings: 'kern';
+}
+
+html {
+  text-rendering: optimizelegibility;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  touch-action: manipulation;
 }

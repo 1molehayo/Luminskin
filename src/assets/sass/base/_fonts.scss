@@ -1,7 +1,7 @@
 // freight-display-pro
 @import url('https://use.typekit.net/aml4crq.css');
 
-// ff bau
+// FF Bau
 @font-face {
   font-family: 'FF Bau Regular';
   src: url('https://cdn.shopify.com/s/files/1/0044/1237/5107/t/1/assets/3A0D89_1_0.woff2')
@@ -10,6 +10,18 @@
 
 @font-face {
   font-family: 'FF Bau Medium';
-  src: url('https://fonts.shopifycdn.com/karla/karla_n4.187fb228d0a8055289c8663e90433b4a50e86848.woff2?h1=bHVtaW5za2luLmNvbQ&hmac=063d2a67a6f911f639586020fc13b21e1e17f5b4e86db33afee68bb03ace03b7')
+  src: url('https://cdn.shopify.com/s/files/1/0044/1237/5107/t/1/assets/3A0D89_0_0.woff2')
     format('woff2');
+}
+
+// icomoon
+@font-face {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/icomoon/icomoon.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../../fonts/icomoon/icomoon.svg') format('svg');
+  font-display: block;
 }

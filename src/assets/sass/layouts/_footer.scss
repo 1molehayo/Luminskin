@@ -1,16 +1,142 @@
 .footer {
-  padding: 1rem;
-  background: color(light-grey);
+  @include respond(large) {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
 
-  .copyright {
-    @include font-size(small);
+  @include respond(small) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  padding: 4rem 2.5rem;
+  background: color(primary);
+  color: color(grey);
 
-    &__link {
-      color: color(black);
+  &-about {
+    max-width: 365px;
+
+    .heading {
+      @include respond(medium) {
+        @include font-size(large);
+        margin-bottom: 1rem;
+        line-height: 2rem;
+      }
+      @include font-size(m-large);
+      margin-bottom: 0.75rem;
+      line-height: 3rem;
     }
   }
 
-  &__title {
-    color: color(dark);
+  &-col {
+    .footer-title {
+      margin: 0.75rem 0;
+    }
+  }
+
+  .copyright {
+    @include respond(large) {
+      margin-bottom: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    @include respond(medium) {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+    }
+
+    @include font-size(small);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+    &-row {
+      @include respond(medium) {
+        margin-left: 0;
+      }
+      display: flex;
+      flex: 1;
+      align-items: center;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &-divider {
+    display: block;
+    margin-top: 0.5rem;
+    height: 1px;
+    background: color(grey);
+  }
+
+  .form-control {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom-color: #fcfcf9 !important;
+    background: transparent;
+    color: #fcfcf9;
+
+    &::placeholder {
+      @include font-weight(semi-bold);
+      color: #fcfcf9;
+    }
+  }
+
+  &-list {
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  &-link {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .other-footer-links {
+    @include respond(medium) {
+      justify-content: flex-end;
+    }
+    @include font-size(small);
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+      margin-right: 0.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .social-links {
+    margin-top: 0.5rem;
+
+    a {
+      @include font-size(medium);
+      display: inline-block;
+      margin-right: 0.75rem;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-title {
+    @include font-weight(bold);
   }
 }

@@ -4,14 +4,12 @@ import classnames from 'classnames';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
-export const PageLayout = (props) => {
+export const PageLayout = ({ children, pageClass }) => {
   return (
     <>
       <Header />
 
-      <main className={classnames('page-body', props.pageClass)}>
-        {props.children}
-      </main>
+      <main className={classnames('page-body', pageClass)}>{children}</main>
 
       <Footer />
     </>

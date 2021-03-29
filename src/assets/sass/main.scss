@@ -12,11 +12,17 @@
 
 // vendors
 @import 'vendors/bootstrap';
+@import 'vendors/icomoon';
 
 // components
 @import 'components/button';
+@import 'components/cart';
+@import 'components/error-modal';
+@import 'components/form';
 @import 'components/loader';
+@import 'components/modal';
 @import 'components/nav';
+@import 'components/product-card';
 @import 'components/tabs';
 
 // layout
