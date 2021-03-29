@@ -21,9 +21,6 @@ const Home = () => {
   const currencies = useQuery(GET_CURRENCY);
   const products = useQuery(GET_PRODUCTS, { variables: { currency } });
 
-  //   console.log('products', products.data);
-  //   console.log('currencies', currencies.data);
-
   useEffect(() => {
     if (products.error || currencies.error) {
       handleErrorMessage(products.error || currencies.error).then((err) => {
