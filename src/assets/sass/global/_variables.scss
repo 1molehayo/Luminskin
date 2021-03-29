@@ -3,6 +3,7 @@ $colors: (
   dark: #2b2e2b,
   grey: #f5f5f4,
   light-grey: #f8f9fa,
+  light-green: #e2e6e3,
   primary: #4b5548,
   red: #f00,
   white: #fff
@@ -11,7 +12,8 @@ $colors: (
 $font-families: (
   freight-display: 'freight-display-pro',
   ff-bau-regular: 'FF Bau Regular',
-  ff-bau-medium: 'FF Bau Medium'
+  ff-bau-medium: 'FF Bau Medium',
+  icomoon: 'icomoon'
 );
 
 $font-weights: (
@@ -22,9 +24,9 @@ $font-weights: (
 );
 
 $font-sizes: (
-  xx-small: 10px,
-  x-small: 12px,
-  small: 14px,
+  xx-small: 9px,
+  x-small: 11px,
+  small: 13px,
   regular: 16px,
   medium: 20px,
   large: 24px,

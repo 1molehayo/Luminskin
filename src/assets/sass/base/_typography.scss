@@ -1,25 +1,26 @@
 .heading {
-  @include respond(small) {
+  @include respond(large) {
     @include font-size(m-large);
   }
 
   @include font-weight(regular);
   @include font-size(x-large);
   @include font-family(freight-display);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   line-height: 1.25;
   color: color(black);
 }
 
 .paragraph {
-  @include respond(small) {
+  @include respond(large) {
     @include font-size(small);
+    line-height: 1.7;
   }
 
   @include font-family(ff-bau-regular);
   @include font-size(regular);
   @include font-weight(regular);
+  margin-bottom: 0.5rem;
   line-height: 1.5;
   letter-spacing: 0.2px;
-  color: color(grey);
 }

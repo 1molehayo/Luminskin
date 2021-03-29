@@ -1,0 +1,54 @@
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  @include font-family(icomoon);
+  text-transform: none;
+  line-height: 1;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-caret-arrow-down::before {
+  content: '\e900';
+}
+
+.icon-close::before {
+  content: '\e901';
+}
+
+.icon-caution::before {
+  content: '\e917';
+}
+
+.icon-down-arrow::before {
+  content: '\e903';
+}
+
+.icon-facebook::before {
+  content: '\e904';
+}
+
+.icon-instagram::before {
+  content: '\e905';
+}
+
+.icon-long-arrow-right::before {
+  content: '\e906';
+}
+
+.icon-right-arrow-angle::before {
+  content: '\e90c';
+}
+
+.icon-shopping-cart::before {
+  content: '\e90d';
+}
+
+.icon-twitter::before {
+  content: '\e913';
+}

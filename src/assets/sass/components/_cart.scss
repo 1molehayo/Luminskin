@@ -1,0 +1,131 @@
+.cart {
+  &-body {
+    flex: 1;
+  }
+
+  &-card {
+    position: relative;
+    margin-top: 10px;
+    padding: 1rem;
+    background-color: color(white);
+
+    .cart-image {
+      margin-right: 2rem;
+      margin-left: auto;
+      padding: 10px 20px;
+      width: 80px;
+    }
+
+    .remove-item {
+      @include font-size(xx-small);
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      padding: 5px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: color(red);
+      }
+    }
+  }
+
+  .currency-row {
+    padding: 10px 20px 0;
+
+    .currency-select {
+      max-width: 80px;
+    }
+
+    select {
+      @include font-size(small);
+      border: 0;
+      padding: 8px 13px 5px 10px;
+      height: auto;
+    }
+  }
+
+  &-footer {
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #d0d0d0;
+    padding: 0 20px 20px;
+
+    .subtotal-price {
+      @include font-family(ff-bau-medium);
+    }
+  }
+
+  &-list {
+    padding: 0 20px;
+  }
+
+  .modal-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-row {
+    .paragraph {
+      @include font-size(small);
+    }
+  }
+
+  &-subtotal {
+    @include font-size(small);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 30px;
+    padding-top: 15px;
+  }
+
+  &-top {
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  &-title {
+    @include font-family(ff-bau-medium);
+    @include font-weight(regular);
+    @include font-size(xx-small);
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-style: normal;
+    color: #696969;
+  }
+
+  .quantity-selector {
+    display: inline-flex;
+    border: 0.5px solid #bcbcbc;
+    padding: 7px;
+
+    span {
+      @include font-size(small);
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        color: color(primary);
+      }
+    }
+
+    input[type='text'] {
+      @include font-size(small);
+      border: 0;
+      padding: 0 10px;
+      width: 50px;
+      text-align: center;
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+        border: 0;
+      }
+    }
+  }
+}
