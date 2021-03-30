@@ -19,7 +19,7 @@ For this challenge we'll be recreating the luminskin.com product page and cart u
 
 - There is no need to implement the page navbar, or filter dropdown as shown in the screenshot.
 
-![ScreenShot](https://raw.github.com/1molehayo/Luminskin/project-setup/src/assets/img/lumin-products-page.png)
+![ScreenShot](https://raw.github.com/1molehayo/Luminskin/screens/src/assets/img/lumin-products-page.png)
 
 
 ### Cart Requirements
@@ -34,16 +34,16 @@ For this challenge we'll be recreating the luminskin.com product page and cart u
 
 - It should sum the items in the cart and display them in the correct selected currency.
 
-![ScreenShot](https://raw.github.com/1molehayo/Luminskin/project-setup/src/assets/img/lumin-cart.png)
+![ScreenShot](https://raw.github.com/1molehayo/Luminskin/screens/src/assets/img/lumin-cart.png)
 
 
 ## Run Project
 
-- Visit this [Link](https://luminskin-fe-challenge.netlify.app/) to run the project on your browser
+### 1. Visit this [Link](https://luminskin-fe-challenge.netlify.app/) to run the project on your browser
 
-- Clone this repo and in the project directory, you can run:
+### 2. Clone this repo and in the project directory, you can run:
 
-### `yarn start or npm start`
+`yarn start or npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
