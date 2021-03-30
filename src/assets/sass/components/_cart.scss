@@ -1,6 +1,8 @@
 .cart {
   &-body {
     flex: 1;
+    padding-bottom: 1rem;
+    overflow-y: auto;
   }
 
   &-card {
