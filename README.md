@@ -37,9 +37,11 @@ For this challenge we'll be recreating the luminskin.com product page and cart u
 ![ScreenShot](https://raw.github.com/1molehayo/Luminskin/project-setup/src/assets/img/lumin-cart.png)
 
 
-## Available Scripts
+## Run Project
 
-In the project directory, you can run:
+- Visit this [Link](https://luminskin-fe-challenge.netlify.app/) to run the project on your browser
+
+- Clone this repo and in the project directory, you can run:
 
 ### `yarn start or npm start`
 
