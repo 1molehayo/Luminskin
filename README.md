@@ -39,7 +39,8 @@ For this challenge we'll be recreating the luminskin.com product page and cart u
 
 ## Run Project
 
-### 1. Visit this [Link](https://luminskin-fe-challenge.netlify.app/) to run the project on your browser
+### 1. Demo:
+Visit this [Link](https://luminskin-fe-challenge.netlify.app/) to see demo
 
 ### 2. Clone this repo and in the project directory, you can run:
 
