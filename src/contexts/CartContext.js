@@ -15,9 +15,10 @@ class CartContextProvider extends Component {
   }
 
   componentDidMount() {
-    const cartStorage = JSON.parse(localStorage.getItem('cart')) || [];
-    const currencyStorage =
-      JSON.parse(localStorage.getItem('currency')) || 'USD';
+    const cartStorage = localStorage.getItem('cart')
+      ? JSON.parse(localStorage.getItem('cart'))
+      : [];
+    const currencyStorage = localStorage.getItem('currency') || 'USD';
     this.setState({ cartItems: cartStorage, currency: currencyStorage });
   }
 
@@ -86,7 +87,7 @@ class CartContextProvider extends Component {
 
   onChangeCurrency(currency) {
     this.setState({ currency });
-    localStorage.setItem('currency', JSON.stringify(currency));
+    localStorage.setItem('currency', currency);
   }
 
   render() {

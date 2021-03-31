@@ -36,7 +36,10 @@ const Home = () => {
       <ErrorModal
         buttonText="Home"
         closeModal={null}
-        handleError={() => window.location.reload()}
+        handleError={() => {
+          localStorage.setItem('currency', 'USD');
+          window.location.reload();
+        }}
         showModal={products.error || currencies.error}
         title="Error"
         message={errorMsg}
